@@ -28,19 +28,11 @@ $(document).ready(function () {
         var $newTask = $('#new-task').val();
 
         if ($newTask === '') {
-
-            $('.warning');
-  
-            $('.success').hide();
         } else {
-
-            $('.success');
-      
-            $('.warning').hide();
             
             var newListItem = '<li>';
             newListItem += '<label>' + $newTask + '</label>';
-            newListItem += '<button class="delete">x</button>';
+            newListItem += '<input class="delete"></button>';
             newListItem += '</li>';
              
             $('ul#incomplete-tasks').append(newListItem);
