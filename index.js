@@ -32,7 +32,7 @@ $(document).ready(function () {
             
             var newListItem = '<li>';
             newListItem += '<label>' + $newTask + '</label>';
-            newListItem += '<input class="delete"></button>';
+            newListItem += '<input class="delete"></button> <hr>';
             newListItem += '</li>';
              
             $('ul#incomplete-tasks').append(newListItem);
